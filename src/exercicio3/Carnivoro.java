@@ -1,5 +1,5 @@
 package exercicio3;
 
-public interface Carnivoro extends Alimentacao {
+public interface Carnivoro {
     void comerCarne();
 }

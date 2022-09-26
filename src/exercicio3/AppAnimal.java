@@ -12,6 +12,17 @@ public class AppAnimal {
         animais[1].emitirSom();
         animais[2].emitirSom();
 
+        comerAnimal(animais[0]);
+        comerAnimal(animais[2]);
+
+    }
+
+    public static void comerAnimal(Animal animal) {
+        if(animal instanceof Carnivoro) {
+            ((Carnivoro) animal).comerCarne();
+        } else {
+            ((Herbivoro) animal).comerPasto();
+        }
     }
 
 }
